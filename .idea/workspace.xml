@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add github workflow last one">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources",
-    "onboarding.tips.debug.path": "C:/Users/sofiane/IdeaProjects/project-actions/src/main/java/com/sofiane/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/sofiane/IdeaProjects/project-actions/src/main/java/com/sofiane/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sofiane\IdeaProjects\project-actions\src\test\resources" />
@@ -41,7 +48,17 @@
       <recent name="C:\Users\sofiane\IdeaProjects\project-actions\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml">
+    <configuration name="C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-actions" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestHomePage.testHomepage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-actions" />
       <extension name="coverage">
@@ -62,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.TestHomePage.testHomepage" />
       </list>
     </recent_temporary>
@@ -75,7 +93,51 @@
       <option name="presentableId" value="Default" />
       <updated>1731047887558</updated>
     </task>
+    <task id="LOCAL-00001" summary="add github workfow">
+      <created>1731106081878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731106081878</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add github workflow">
+      <created>1731106350517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731106350517</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add github workflow real">
+      <created>1731106855643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731106855643</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add github workflow last">
+      <created>1731107635630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731107635630</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add github workflow last one">
+      <created>1731108943814</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731108943814</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add github workfow" />
+    <MESSAGE value="add github workflow" />
+    <MESSAGE value="add github workflow real" />
+    <MESSAGE value="add github workflow last" />
+    <MESSAGE value="add github workflow last one" />
+    <option name="LAST_COMMIT_MESSAGE" value="add github workflow last one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
