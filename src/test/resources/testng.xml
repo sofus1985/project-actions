@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="listeners.ExtentReporterNG"></listener>
+    </listeners>
+
+
+    <test verbose="2" preserve-order="true" name="C:/Users/sofiane/IdeaProjects/selenium_GitHub_actions">
+        <classes>
+            <class name="test_home_page.TestHomePage">
+                <methods>
+                    <include name="testHomepage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
