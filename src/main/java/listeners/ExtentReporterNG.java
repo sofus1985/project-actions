@@ -16,10 +16,10 @@ import java.util.Map;
 public class ExtentReporterNG implements IReporter {
     private ExtentReports extent;
 
-
     @Override
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-        extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
+        String filePath = outputDirectory + File.separator + "Extent.html";
+        extent = new ExtentReports(filePath, true);
 
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
