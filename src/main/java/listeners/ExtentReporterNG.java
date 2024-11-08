@@ -18,8 +18,8 @@ public class ExtentReporterNG implements IReporter {
 
     @Override
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-        String filePath = outputDirectory + File.separator + "Extent.html";
-        extent = new ExtentReports(filePath, true);
+        System.out.println("Output Directory: " + outputDirectory); // Print the output directory for debugging
+        extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
 
         for (ISuite suite : suites) {
             Map<String, ISuiteResult> result = suite.getResults();
@@ -36,6 +36,7 @@ public class ExtentReporterNG implements IReporter {
         extent.flush();
         extent.close();
     }
+
 
     private void buildTestNodes(IResultMap tests, LogStatus status) {
         ExtentTest test;

@@ -5,55 +5,45 @@
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
-
-name: Java CI with Maven
+name: Build and Test with Maven
 
 on:
-  workflow_dispatch:
-    inputs:
-      browsername:
-        type: string
-        description: 'browser name'
-        default: 'chrome'
-      testname:
-        description: 'enter the regex to run the tests'
-        type: string
-      xmlsname:
-        type: string
-        description: 'enter on or multiple xmls to run'
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
           distribution: 'temurin'
-          cache: maven
-      - name: run test with xml files
-        if: ${{inputs.xmlsname}}
-        run: >
-          mvn clean test
-          -Dsurefire.suiteXmlFile=${{inputs.xmlsname}}
-          -DenableBrowserOptions=true -Dmaven.test.failure.ignore=true
-      - name: run specific tests with regex
-        if: ${{inputs.testname}}
-        run: >
-          mvn clean test
-          -Dtest=${{inputs.testname}}
-          -Dbrowser=${{inputs.browsername}}
-          -DenableBrowserOptions=true -Dmaven.test.failure.ignore=true
-      - name: archive artifact
+          java-version: '17'
+
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+
+      - name: Build with Maven
+        run: mvn clean install
+
+      - name: Run Selenium tests
+        run: mvn test
+
+      - name: Upload Spark HTML Report
         uses: actions/upload-artifact@v4
         with:
           name: sparkHtml
-          path: target/surefire-reports/Extent.html
+          path: test-output/Extent.html
