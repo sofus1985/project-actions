@@ -6,7 +6,7 @@
     </listeners>
 
 
-    <test verbose="2" preserve-order="true" name="C:/Users/sofiane/IdeaProjects/selenium_GitHub_actions">
+    <test verbose="2" preserve-order="true" name="C:/Users/sofiane/IdeaProjects/project-actions">
         <classes>
             <class name="test_home_page.TestHomePage">
                 <methods>
@@ -16,6 +16,3 @@
         </classes>
     </test>
 </suite>
-
-
-

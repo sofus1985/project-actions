@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add github workflow last one">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add gitHub workflow new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/listeners/ExtentReporterNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/listeners/ExtentReporterNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +34,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/sofiane/IdeaProjects/project-actions/src/main/java/com/sofiane/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/sofiane/IdeaProjects/ReadFromProperties",
+    "onboarding.tips.debug.path": "C:/Users/sofiane/IdeaProjects/project-actions/src/main/java/com/sofiane/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sofiane\IdeaProjects\project-actions\src\test\resources" />
@@ -48,7 +50,27 @@
       <recent name="C:\Users\sofiane\IdeaProjects\project-actions\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/SmokeTestNGRunner.xml">
+    <configuration name="C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/SmokeTestNGRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-actions" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/SmokeTestNGRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testNGrunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="project-actions" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testNGrunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="project-actions" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -79,6 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/SmokeTestNGRunner.xml" />
+        <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testNGrunner.xml" />
         <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.TestHomePage.testHomepage" />
       </list>
@@ -128,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1731108943814</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add gitHub workflow new">
+      <created>1731109684397</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731109684397</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -137,7 +168,8 @@
     <MESSAGE value="add github workflow real" />
     <MESSAGE value="add github workflow last" />
     <MESSAGE value="add github workflow last one" />
-    <option name="LAST_COMMIT_MESSAGE" value="add github workflow last one" />
+    <MESSAGE value="add gitHub workflow new" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitHub workflow new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
