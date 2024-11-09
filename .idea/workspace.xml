@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add gitHub workflow new fifth" />
+    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add gitHub workflow second">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page_chrome_option/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page_chrome_option/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screenrecorder/ScreenRecorderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_home_page/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_home_page/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Extent.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,9 +104,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/SmokeTestNGRunner.xml" />
+        <item itemvalue="TestNG.TestHomePage.testHomepage" />
         <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testNGrunner.xml" />
         <item itemvalue="TestNG.C:/Users/sofiane/IdeaProjects/project-actions/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.TestHomePage.testHomepage" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731128403913</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add gitHub workflow">
+      <created>1731140790257</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731140790257</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add gitHub workflow second">
+      <created>1731141258359</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731141258359</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,7 +224,9 @@
     <MESSAGE value="add gitHub workflow new third" />
     <MESSAGE value="add gitHub workflow new fourth" />
     <MESSAGE value="add gitHub workflow new fifth" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitHub workflow new fifth" />
+    <MESSAGE value="add gitHub workflow" />
+    <MESSAGE value="add gitHub workflow second" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitHub workflow second" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

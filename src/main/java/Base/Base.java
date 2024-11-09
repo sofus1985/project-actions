@@ -1,8 +1,6 @@
 package Base;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -18,6 +16,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 
@@ -33,7 +33,7 @@ public class Base {
 
     @Parameters({"driverConfigEnabled", "browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("https://m.rediff.com/") String url) {
+    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") String url) {
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
             driver.get(url);
@@ -52,16 +52,17 @@ public class Base {
     }
     private static void driverInit(String browser) {
         chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--start-maximized");
-        //chromeOptions.addArguments("--incognito");
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation", "disable-infoBars"));
-
         chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.addArguments("--disable-gpu");
-        chromeOptions.addArguments("--window-size=1920,1080");
+        //chromeOptions.addArguments("--start-maximized");
+        //chromeOptions.addArguments("--incognito");
+       // chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+       // chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation", "disable-infoBars"));
+
+        //chromeOptions.addArguments("--headless");
+        //chromeOptions.addArguments("--no-sandbox");
+        // chromeOptions.addArguments("--disable-dev-shm-usage");
+        // chromeOptions.addArguments("--disable-gpu");
+        //chromeOptions.addArguments("--window-size=1920,1080");
 
 
 
@@ -107,6 +108,43 @@ public class Base {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
     }
+
+    public void clickOnElementWithScreenShot(WebElement element) {
+        try {
+            webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
+            element.click();
+        } catch (NoSuchElementException e) {
+            takeScreenshot("NoSuchElementException_clickOnElement");
+            e.printStackTrace();
+        }
+    }
+
+    public void takeScreenshot(String fileName) {
+        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshotsDir = new File("screenshots");
+
+        // Attempt to create the directory if it doesn't exist
+        if (!screenshotsDir.exists()) {
+            boolean dirCreated = screenshotsDir.mkdirs();  // mkdirs() creates any necessary parent directories
+            if (dirCreated) {
+                System.out.println("Directory 'screenshots' created successfully.");
+            } else {
+                System.out.println("Failed to create directory 'screenshots'. Check permissions.");
+            }
+        }
+
+        File destFile = new File(screenshotsDir, fileName + ".png");
+
+        try {
+            FileUtils.copyFile(srcFile, destFile);
+            System.out.println("Screenshot saved as: " + destFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Failed to save screenshot at: " + destFile.getAbsolutePath());
+        }
+    }
+
+
 
 
     public boolean validationURL(WebDriver driver, String expURL){

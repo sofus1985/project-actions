@@ -11,7 +11,7 @@ public class TestHomePage extends Base {
     public void testHomepage(){
 
         homePage = new HomePage();
-        homePage.clickButtonModel();
+        homePage.mainLogin();
 
 //
 //      WebElement buttonModel =webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@aria-label='Models']")));
