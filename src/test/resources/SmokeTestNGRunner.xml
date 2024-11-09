@@ -8,11 +8,13 @@
 
     <test verbose="2" name="C:/Users/sofiane/IdeaProjects/project-actions">
         <classes>
+
             <class name="test_home_page.TestHomePage">
                 <methods>
                     <include name="testHomepage"/>
                 </methods>
             </class>
+
         </classes>
     </test>
 
