@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="listeners.ExtentReporterNG"></listener>
+        <listener class-name="listeners.ExtentReporterNG"/>
     </listeners>
 
 
-    <test verbose="2" preserve-order="true" name="C:/Users/sofiane/IdeaProjects/project-actions">
+    <test verbose="2" name="C:/Users/sofiane/IdeaProjects/project-actions">
         <classes>
             <class name="test_home_page.TestHomePage">
                 <methods>
@@ -15,4 +15,5 @@
             </class>
         </classes>
     </test>
+
 </suite>
