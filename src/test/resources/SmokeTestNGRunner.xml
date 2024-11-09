@@ -6,7 +6,7 @@
     </listeners>
 
 
-    <test verbose="2" name="C:/Users/sofiane/IdeaProjects/project-actions">
+    <test  name="smoke">
         <classes>
 
             <class name="test_home_page.TestHomePage">

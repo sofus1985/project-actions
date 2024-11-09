@@ -46,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sparkHtml
-          path: C:\Users\sofiane\IdeaProjects\project-actions/test-output/Extent.html
+          path: test-output/Extent.html
