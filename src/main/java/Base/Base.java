@@ -53,9 +53,17 @@ public class Base {
     private static void driverInit(String browser) {
         chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--start-maximized");
-        chromeOptions.addArguments("--incognito");
+        //chromeOptions.addArguments("--incognito");
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation", "disable-infoBars"));
+
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--window-size=1920,1080");
+
+
 
         firefoxOptions = new FirefoxOptions();
         chromeOptions.addArguments("--start-maximized");
