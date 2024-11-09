@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add gitHub workflow new second">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f031fa9f-e45c-419f-890e-59e52b3f83bb" name="Changes" comment="add gitHub workflow new fourth">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Extent.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1731125345640</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add gitHub workflow new third">
+      <created>1731126877143</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731126877143</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,7 +181,9 @@
     <MESSAGE value="add github workflow last one" />
     <MESSAGE value="add gitHub workflow new" />
     <MESSAGE value="add gitHub workflow new second" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitHub workflow new second" />
+    <MESSAGE value="add gitHub workflow new third" />
+    <MESSAGE value="add gitHub workflow new fourth" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitHub workflow new fourth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
