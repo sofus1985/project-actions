@@ -24,6 +24,7 @@ public class HomePage extends Base {
 //        buttonModel.click();
 //    }
     public void typeUserName(String user) {
+
         sendKeysToElement(inputFieldUsername,user);
     }
     public void typePassword(String password) {
@@ -31,6 +32,7 @@ public class HomePage extends Base {
     }
 
     public void submit() {
+
         clickOnElementWithScreenShot(submitButton);
     }
     public void mainLogin(){

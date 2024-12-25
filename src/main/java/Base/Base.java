@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -31,9 +32,10 @@ public class Base {
     public static Wait<WebDriver> fluentWait;
     //https://m.rediff.com/ https://the-internet.herokuapp.com/windows
 
+    //https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
     @Parameters({"driverConfigEnabled", "browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") String url) {
+    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("https://demoqa.com/automation-practice-form") String url) {
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
             driver.get(url);
@@ -52,8 +54,8 @@ public class Base {
     }
     private static void driverInit(String browser) {
         chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        //chromeOptions.addArguments("--start-maximized");
+       // chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--start-maximized");
         //chromeOptions.addArguments("--incognito");
        // chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
        // chromeOptions.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation", "disable-infoBars"));
@@ -143,6 +145,25 @@ public class Base {
             System.out.println("Failed to save screenshot at: " + destFile.getAbsolutePath());
         }
     }
+
+    //  method to scroll into view and click using JavaScript
+    public void scrollToViewAndClick(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+    }
+
+    //  method to wait for visibility
+     public void waitForVisibility(WebElement element) {
+        webDriverWait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    //  method to assert element visibility
+    public void assertElementIsVisible(WebElement element) {
+        waitForVisibility(element);
+        Assert.assertTrue(element.isDisplayed(), "Element is not visible.");
+    }
+
 
 
 

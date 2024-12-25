@@ -6,13 +6,13 @@
     </listeners>
 
 
+    <parameter name="browser" value="localChrome"></parameter>
+
     <test  name="smoke">
         <classes>
 
-            <class name="test_home_page.TestHomePage">
-                <methods>
-                    <include name="testHomepage"/>
-                </methods>
+            <class name="test_home_page.TestDropDownNotVisible">
+
             </class>
 
         </classes>

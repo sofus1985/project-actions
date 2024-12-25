@@ -39,11 +39,8 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.26.0</version>
+            <version>4.27.0</version>
         </dependency>
-
-
-
 
 
 
@@ -159,6 +156,9 @@
                         <!-- Path to your TestNG suite XML file -->
                         <suiteXmlFile>src/test/resources/SmokeTestNGRunner.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <propertyName>browser</propertyName>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 
