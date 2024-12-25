@@ -88,6 +88,22 @@ public class Base {
         } else {
             System.out.println("Browser is not matching");
         }
+
+//        if (browser.equalsIgnoreCase("chrome")) {
+//            System.setProperty("webDriver.chrome.driver", "C:\\Users\\sofiane\\Web Drivers");
+//            driver = new ChromeDriver(chromeOptions);
+//        } else if (browser.equalsIgnoreCase("firefox")) {
+//            System.setProperty("webDriver.gecko.driver", "C:\\Users\\sofiane\\Web Drivers");
+//            driver = new FirefoxDriver(firefoxOptions);
+//        } else if (browser.equalsIgnoreCase("edge")) {
+//            System.setProperty("webDriver.edge.driver", "C:\\Users\\sofiane\\Web Drivers");
+//            driver = new EdgeDriver(edgeOptions);
+//        } else {
+//            System.out.println("Browser is not matching");
+//        }
+
+
+
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         fluentWait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(20))

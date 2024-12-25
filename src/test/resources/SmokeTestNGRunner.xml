@@ -6,7 +6,7 @@
     </listeners>
 
 
-    <parameter name="browser" value="localChrome"></parameter>
+    <parameter name="browser" value="Chrome"/>
 
     <test  name="smoke">
         <classes>
